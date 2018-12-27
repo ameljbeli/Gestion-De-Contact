@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amel.test.activity_acceuil"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    >
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="ajouter"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        />
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:id="@+id/txt_nom_ajout"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textSize="30dp"
+                />
+
+            <EditText
+                android:id="@+id/ed_nom_ajout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="saisir nom utilisateur" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/txt_nomPass"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="prenom"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/ed_pre_ajout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="saisir prenom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:id="@+id/txt_tel"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Tel"
+                android:textSize="30dp"
+                />
+
+            <EditText
+                android:id="@+id/ed_tel_ajout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="saisir tel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <Button
+
+                android:id="@+id/btn_valid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:text="ajouter"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="118dp"
+                android:layout_height="50dp" />
+
+
+            <Button
+                android:id="@+id/btn_quitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="quitter"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
